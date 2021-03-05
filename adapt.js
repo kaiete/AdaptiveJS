@@ -12,5 +12,9 @@ var adapt = {
   run : function(adaptToRun) {
     let currentAdapt = adapts.indexOf(adaptToRun)
     eval(adaptDefinitions[currentAdapt])
+  },
+  getstart : function(adaptToUse,start) {
+    let currentAdapt = adapts.indexOf(adaptToUse,start)
+    return adaptDefinitions[currentAdapt]
   }
 }
