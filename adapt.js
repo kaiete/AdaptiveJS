@@ -11,7 +11,7 @@ var adapt = {
   },
   run : function(adaptToRun) {
     let currentAdapt = adapts.indexOf(adaptToRun)
-    eval(adaptDefinitions[currentAdapt])
+    setTimeout(adaptDefinitions[currentAdapt],1)
   },
   getstart : function(adaptToUse,start) {
     let currentAdapt = adapts.indexOf(adaptToUse,start)
