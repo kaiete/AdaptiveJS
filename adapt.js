@@ -15,6 +15,7 @@ var adapt = {
       setTimeout(adaptDefinitions[currentAdapt],1)
     } catch (adapterror) {
       console.error("AdaptError: adaptivejs ran in to an error in your code (" + adapterror + ") is all we know. If you made this website, check the code, and if you didn't, then tell the developer of this site.")
+      return false
     }
   },
   getstart : function(adaptToUse,start) {
