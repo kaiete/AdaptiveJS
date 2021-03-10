@@ -16,5 +16,9 @@ var adapt = {
   getstart : function(adaptToUse,start) {
     let currentAdapt = adapts.indexOf(adaptToUse,start)
     return adaptDefinitions[currentAdapt]
+  },
+  clone : function() {
+    //yes, I'm obsessed with cloning adaptivejs / other things
+    this.didthatreallywork = false
   }
 }
